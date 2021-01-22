@@ -29,7 +29,7 @@ CATEGORIES = ["without_mask","with_mask","mask_weared_incorrect"]
 model_mask = tf.keras.models.load_model("./16x3-CNN-l_mod3.model")
 while True:
     ret, frame = cam.read()
-    frame = cv2.resize(frame, (1920, 1080))
+    frame = cv2.resize(frame, (600, 600))
     (h, w) = frame.shape[:2]
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blob = cv2.dnn.blobFromImage(frame, 1.0, (300, 300),
