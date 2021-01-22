@@ -8,7 +8,7 @@ from PIL import Image
 import numpy
 
 # load the model
-model = tf.keras.models.load_model("./16x3-CNN-l_mod2.model")
+model = tf.keras.models.load_model("./16x3-CNN-l_mod3.model")
 images_path = "./archive/single_test/"
 img_size = (255, 255)
 
@@ -39,7 +39,7 @@ img / 255
 # get feature map for first hidden layer
 feature_maps = model.predict(img)
 # plot the output from each block
-square = 4
+square = 2
 for fmap in feature_maps:
 	# plot all 64 maps in an 8x8 squares
 	ix = 1
