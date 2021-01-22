@@ -1,0 +1,14 @@
+#data
+archive/images
+archive/annotations
+archive/extra
+X_255_255.pickle
+Y_255_255.pickle
+
+
+
+# Environments
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
