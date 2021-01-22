@@ -68,7 +68,7 @@ while True:
             p = numpy.where(prediction[0] == prediction[0].max())
             print(prediction)
             print(prediction)
-            if prediction>0.4:
+            if prediction>0.7:
                 print("without_mask")
                 cv2.putText(frame, 'without_mask', (startX, startY - 10),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0,0,255), 2)
